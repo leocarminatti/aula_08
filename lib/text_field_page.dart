@@ -15,7 +15,7 @@ class TextFieldPage extends StatelessWidget {
         title: const Text(
           'TextField Page',
           style: TextStyle(color: Colors.white),
-        ,
+        ),
         backgroundColor: Colors.deepPurple,
       ),
       body: Padding(
