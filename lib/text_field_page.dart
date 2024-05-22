@@ -15,7 +15,7 @@ class TextFieldPage extends StatelessWidget {
         title: const Text(
           'TextField Page',
           style: TextStyle(color: Colors.white),
-        ),
+        ,
         backgroundColor: Colors.deepPurple,
       ),
       body: Padding(
@@ -26,7 +26,7 @@ class TextFieldPage extends StatelessWidget {
               TextField(
                 controller: nameController,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               TextField(
                 controller: emailController,
                 decoration: InputDecoration(
@@ -37,21 +37,21 @@ class TextFieldPage extends StatelessWidget {
                   labelText: 'Email',
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               TextField(
                 controller: passwordController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   suffixIcon: Icon(Icons.password),
                 ),
                 obscureText: true,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () async {
                   final result = await Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => FormPage(),
+                      builder: (context) => const FormPage(),
                     ),
                   );
 
